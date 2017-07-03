@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Payment Page</title>
+		<link rel="stylesheet" type="text/css" href="payment.css">
+	</head>
+	<body>
+		<header>
+		  <div class="header">
+		    <img src="logo-0.jpg" id='logo'>
+		    <nav>
+		      <a href="#" data-tooltip='Add Account'><img src="img/add.svg" class='account_links'></a>
+		      <a href="#" data-tooltip='Sync with SAP'><img src="img/sync.svg" class='account_links'></a>
+		      <a href="#" data-tooltip='Manage Account'><img src="img/settings.svg" class='account_links'></a>
+		    </nav>
+		  </div>
+		</header>
+
+		<div id='container'>
+			<div class='progress'>
+				<a href="#"><img src="address.svg"></a>
+				<span class='arrow_box'>&xrarr;</span>
+				<a href="#"><img src="product.svg"></a>
+				<span class='arrow_box'>&xrarr;</span>
+				<a href="#"><img src="delivery.svg"></a>
+				<span class='arrow_box'>&xrarr;</span>
+				<a href="#"><img src="payment.svg"></a>
+		</div>
+
+		<h1>Review Order</h1>
+
+		<div class="address">
+		  <section class="shipping">
+		  	<h2 class='top_header'>Name</h2>
+		    <h2>Ship To</h2>
+
+		    <div>
+		    	<a href="#" class='edit'>edit</a>
+				<p> 2555 valley view lane, suite 505   </p>
+				<p>Irving, Texas, 76040</p>
+
+			    
+			</div>
+
+			<h2 id='bill'>Bill To</h2>
+		    <div>
+		    	<a href="#" class='edit'>edit</a>
+				<p> 2555 valley view lane, suite 505   </p>
+				<p>Irving, Texas, 76040</p>
+			    
+			</div>
+
+
+		  </section>
+
+		  <section class="po">
+		  <a href="#" class='edit'>edit</a>
+		  <h2 class='top_header'>PO xxxxxxxx</h2>
+
+		    <h2>Customer PO</h2>
+
+		    <input type="text" name="customer_po">
+		    <div>
+		    	
+			</div>
+
+			<div>
+				<FORM METHOD="post" ACTION="" ENCTYPE="multipart/form-data"> 
+				Attach PO Form: <INPUT TYPE="file" NAME="attachedfile" MAXLENGTH=50 ALLOW="text/*" > 
+				</FORM>
+
+
+				<a href="#" class='edit'>edit</a>
+				<div>
+			    	<img src="img/magnifying_glass.png" class='product_pic'>
+
+			    	Lorem ipsum dolor sit amet, consectetur a
+
+			    	<p class='cost'>$</p>
+			    	
+			    </div>
+
+			    <div>
+			    	<img src="img/magnifying_glass.png" class='product_pic'>
+
+			    	Lorem ipsum dolor sit amet, consectetur a
+
+			    	<p class='cost'>$</p>
+			    	
+			    </div>
+
+			    <hr>
+
+			    <div>
+			    	
+
+			    	TOTAL
+
+			    	<p class='cost'>$</p>
+			    	
+			    </div>
+				
+			</div>
+
+
+		  </section>
+
+		  <button>Invoice with Terms &xrarr; </button>
+
+		  <button id='trace' >Pay Trace Button </button>
+
+		  
+
+		</div>
+	</body>
+</html>

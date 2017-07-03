@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Customer PO</title>
+		<link rel="stylesheet" type="text/css" href="customerPO.css">
+	</head>
+	<body>
+		<header>
+		  <div class="header">
+		    <img src="logo-0.jpg" id='logo'>
+		    <nav>
+		      <a href="#" data-tooltip='Add Account'><img src="img/add.svg" class='account_links'></a>
+		      <a href="#" data-tooltip='Sync with SAP'><img src="img/sync.svg" class='account_links'></a>
+		      <a href="#" data-tooltip='Manage Account'><img src="img/settings.svg" class='account_links'></a>
+		    </nav>
+		  </div>
+		</header>
+
+		<div id='container'>
+			<div class='progress'>
+				<a href="#"><img src="address.svg"></a>
+				<span class='arrow_box'>&xrarr;</span>
+				<a href="#"><img src="product.svg"></a>
+				<span class='arrow_box'>&xrarr;</span>
+				<a href="#"><img src="delivery.svg"></a>
+				<span class='arrow_box'>&xrarr;</span>
+				<a href="#"><img src="payment.svg"></a>
+		</div>
+
+
+		<div class="address">
+		  <section class="shipping">
+		    <h2>Ship Via</h2>
+		    <div>
+		    	<input type="radio" name="shipping">
+				<p> 2555 valley view lane, suite 505   </p>
+				<p>Irving, Texas, 76040</p>
+			    
+			</div>
+
+
+
+		  </section>
+
+		  <section class="po">
+		    <h2>Customer PO</h2>
+
+		    <input type="text" name="customer_po">
+		    <div>
+		    	
+			</div>
+
+			<div>
+				<FORM METHOD="post" ACTION="" ENCTYPE="multipart/form-data"> 
+				Attach PO Form: <INPUT TYPE="file" NAME="attachedfile" MAXLENGTH=50 ALLOW="text/*" > 
+				</FORM>
+
+				
+			</div>
+
+
+		  </section>
+
+		  
+
+		  <button>Continue to Review Order &xrarr; </button>
+
+		</div>
+	</body>
+</html>

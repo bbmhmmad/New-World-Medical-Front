@@ -1,0 +1,223 @@
+body {
+
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:#137500;
+  
+}
+
+div, h1 {
+  padding:0px;
+  margin:0px;
+}
+
+#invoice{
+  font-size: 6em;
+  display:inline-block;
+  color:#137500;
+  font-weight: normal;
+  margin-left: 64px;
+  margin-top: 54px;
+}
+
+header { color: #333333;  }
+		
+#logo {
+	display: inline-block;
+    width: 12em;
+    margin: 24px;
+}
+.account_links{
+	display: inline-block;
+    width: 2em;
+    margin: 4px;
+}
+
+a {
+
+	display: inline-block;
+    width: 4em;
+    margin: 24px;
+
+}
+			
+header nav { 
+  font-size: 18px; float: right; 
+  margin-right: 5%; 
+  
+}
+			
+header nav a { 
+  color: #333; margin: 0 5px;
+  text-decoration: none; 
+
+ }
+
+#name {
+  color: #30AE24;
+  font-style: italic;
+  font-size: 2em;
+  margin-left: 64px;
+  
+ }
+
+
+
+ .container {
+  overflow: hidden;
+}
+
+section {
+  width: 40%;
+  min-height: 200px;
+  text-align: left;
+  float: left;
+  padding-left: 24px;
+  display: block;
+  word-wrap: break-word;
+}
+
+h2 {
+  font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+p{
+  display: inline-block;
+  font-size: 16px;
+
+
+}
+
+.left {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.right {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+img {
+  width: 2em;
+}
+
+.cost{
+  
+  text-decoration: bold;
+  float:right;
+  margin: auto;
+  margin-top: 16px;
+  
+}
+
+#total{
+  margin-top: 0
+}
+
+
+#contact{
+   margin-left: 12em;
+   text-decoration: underline;
+
+}
+
+form {
+  display: block;
+  margin-top: 4em;
+  margin-left: 4em;
+  text-align: center;
+}
+
+button {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 20%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 24px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 24px;
+    border-radius: 50px;
+    float:right;
+    margin-right: 4em;
+    
+}
+
+button:hover, button:active, button:focus {
+  background: #137500;
+}
+
+
+
+/*CHECKBOX CSS*/
+
+/* functionality */
+
+#checkbox{
+  margin-top: 2em;
+}
+input[type="checkbox"].graphic {
+    display: none;
+}
+ 
+input[type="checkbox"].graphic + label,
+input[type="checkbox"].graphic + label > .flag {
+    padding: 0;
+    display: inline-block;
+}
+input[type="checkbox"].graphic + label {
+    position: relative;
+    /* style */
+    font-size: 36px;
+    font-family: Verdana;
+    text-shadow: 0 0 9px rgba(0,0,0,0.4);
+    color: #333;
+}
+input[type="checkbox"].graphic + label > .flag {
+    position: absolute;
+    right: 0;
+    /* style */
+    width:68px;
+    left: -75px;
+    top: -15px;
+    bottom: -15px;
+}
+
+/* checked state indicator images */
+input[type="checkbox"].graphic + label > .flag {  background-repeat:no-repeat;
+  background-position:0px 50%;
+  content: '';
+  z-index:2;
+  transform:scale(1) rotate(0deg);
+}
+input[type="checkbox"].graphic:checked + label > .flag,
+input[type="checkbox"].graphic + label:active > .flag { 
+  background-image:url(http://cl.ly/image/0v3Y1M1D2l1f/tick.png);
+  transform:scale(0.9) rotate(360deg);
+}
+input[type="checkbox"].graphic + label > .flag,
+input[type="checkbox"].graphic:checked + label:active > .flag {
+  background-image:url(http://cl.ly/image/0B0E1b0z003I/cross.png);
+  transform:scale(0.9) rotate(0deg);
+}
+/* animation */
+input[type="checkbox"].graphic + label > .flag  {
+}
+input[type="checkbox"].graphic + label > .flag {
+  transition: all 0.5s cubic-bezier(1.000, -0.360, 0.000, 1.385); /* custom */
+  transition-timing-function: cubic-bezier(1.000, -0.360, 0.000, 1.385); /* custom */
+}
